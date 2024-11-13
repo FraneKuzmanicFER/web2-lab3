@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breakout Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Postavke igre, uključujući broj cigli i početnu brzinu lopte -->
+    <div id="settings">
+      <h1>Breakout Game</h1>
+      <h3>Game Settings</h3>
+      <label for="numBricks">Number of bricks:</label>
+      <input type="number" id="numBricks" value="20" min="1" />
+
+      <label for="ballSpeed">Initial ball speed:</label>
+      <input type="number" id="ballSpeed" value="2" min="1" />
+
+      <!-- Dugme za pokretanje igre koje poziva funkciju startGame() -->
+      <button onclick="startGame()">Start Game</button>
+    </div>
+    <!-- Canvas element za crtanje igre -->
+    <canvas id="game" style="display: none"></canvas>
+    <script src="script.js"></script>
+  </body>
+</html>
